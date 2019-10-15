@@ -1,12 +1,7 @@
 ---
 - hosts: database
+  become: yes
+  vars_files:
+    - vars/main.yml
   roles:
-    - role: geerlingguy.mysql
-      become: yes
-
-# Variables
-mysql_user_home: /root
-mysql_user_name: root
-mysql_user_password: root
-
-mysql_root_password_update: false
+    - { role: geerlingguy.mysql }
