@@ -1,0 +1,8 @@
+---
+- name: Template of authorized_keys
+  template:
+          src: public_keys/authorized_keys
+          dest: /home/itesciadmin/.ssh/authorized_keys2
+          owner: itesciadmin
+          group: itesciadmin
+          mode: '0644'

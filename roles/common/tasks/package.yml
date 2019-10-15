@@ -1,0 +1,5 @@
+---
+- name:  Ajout de plusieurs packages
+  apt:
+          name: "{{ item }}"
+  loop: "{{ packages }}"

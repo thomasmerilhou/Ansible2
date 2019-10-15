@@ -1,0 +1,13 @@
+---
+- name: Configuration serveur avec plusieurs packages
+  import_tasks: package.yml
+
+- name: Ajout utilisateur
+  import_tasks: users.yml
+
+- name: Creation répertoire .ssh
+  import_tasks: directory.yml
+
+- name: Ajout authorized_keys
+  import_tasks: files.yml
+

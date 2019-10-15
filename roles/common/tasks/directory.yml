@@ -1,0 +1,8 @@
+---
+- name: Creation du repertoire .ssh
+  file:
+          path: /home/itesciadmin/.ssh
+          state: directory
+          owner: itesciadmin
+          group: itesciadmin
+          mode: '0755'
