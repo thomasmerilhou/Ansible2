@@ -1,4 +1,4 @@
 ---
 # from galaxy
 - src: geerlingguy.mysql
-- include: <path_to_requirements>/mysql.yml
+
