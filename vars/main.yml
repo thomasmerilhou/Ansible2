@@ -8,4 +8,3 @@ mysql_users:
   - name: itesciadmin
     host: "%"
     password: itescia123
-    priv: "example_db.*:ALL"

@@ -1,7 +1,7 @@
-[all]
+#[all]
 
-[apache]
-apache.itescia19.local
+#[apache]
+#apache.itescia19.local
 
 [database]
-database.itescia19.local
+192.168.195.129
