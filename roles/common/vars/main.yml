@@ -9,3 +9,7 @@ users:
 
         - username: "test2"
           password: "itescia2"
+
+apache_listen_port: 80
+apache_vhosts:
+        - {servername: "apache.com" documentroot: "/var/www/vhosts/apache_com"}
