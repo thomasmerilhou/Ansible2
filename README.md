@@ -1,10 +1,11 @@
-Refer to wiki to install.
-
-To play your playbook :
+Pour lancer le playbook:
 
 ansible-playbook system.yml -i hosts
+                 mysql.yml
+                 apache.yml
 
-
-To install a role
+Pour installer un rôle (par exemple mysql de geerlingguy)
 
 ansible-galaxy install -r requirements.yml
+
+
