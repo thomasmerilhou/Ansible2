@@ -1,8 +1,11 @@
 ---
 packages:
         - htop
-        - ntpdate
-        - tmux
         - vim
-        - dnsutils
         - sudo
+users:
+        - name: Ajout de plusieurs utilisateurs
+          user: name={{ item.username }} shell=/bin/bash createhome=yes 
+          password: name={{ item.password }}
+          with_items: '{{users}}'
+

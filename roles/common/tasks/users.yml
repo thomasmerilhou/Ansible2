@@ -12,3 +12,8 @@
           name: itescia
           state: absent
           remove: yes
+
+- name: Ajout de plusieurs utilisateurs en même temps
+  user:
+          name: "{{item}}"
+  loop: "{{users}}"
