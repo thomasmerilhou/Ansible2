@@ -13,7 +13,9 @@
           state: absent
           remove: yes
 
-- name: Ajout de plusieurs utilisateurs en même temps
-  user:
-          name: "{{item}}"
-  loop: "{{users}}"
+- name: Ajout de plusieurs utilisateurs
+  user: 
+        name: "{{ item.username }}"
+        password: "{{ item.password }}"
+  with_items: '{{users}}'
+
